@@ -103,7 +103,7 @@ function applyOperation() {
                     isNotNull = cellValue !== null && cellValue !== "";
                     break;
                 case 'word':
-                    isNotNull = /^[A-Za-z]+$/.test(cellValue) && cellValue !== NULL ;
+                    isNotNull = /^[A-Za-z]+$/.test(cellValue) && cellValue !== "NULL" ;
                     break;
                 case 'number':
                     isNotNull = Number.isInteger(cellValue);
